@@ -207,10 +207,19 @@ marimo/_lsp/
 __marimo__/
 
 
-# Ignore everything inside these folders
-Data_Process/Data_Lake/*
-Data_Process/Data_Warehouse/*
+# ==== Data_Lake and Data_Warehouse: keep folders, ignore files ====
+Data_Process/Data_Lake/**
+Data_Process/Data_Warehouse/**
+!Data_Process/Data_Lake/**/
+!Data_Process/Data_Warehouse/**/
+!Data_Process/Data_Lake/**/.gitkeep
+!Data_Process/Data_Warehouse/**/.gitkeep
 
-# But keep .gitkeep so the folders exist
-!Data_Process/Data_Lake/.gitkeep
-!Data_Process/Data_Warehouse/.gitkeep
+# ==== LLM run folders (under Data_Process): keep folders, ignore files ====
+Data_Process/llm_runs_few_shot/**
+Data_Process/llm_runs_zero_shot/**
+!Data_Process/llm_runs_few_shot/**/
+!Data_Process/llm_runs_zero_shot/**/
+!Data_Process/llm_runs_few_shot/**/.gitkeep
+!Data_Process/llm_runs_zero_shot/**/.gitkeep
+

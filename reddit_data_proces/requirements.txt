@@ -1,8 +1,9 @@
-conda install requests
-conda install pandas
-conda install openpyxl
+pip install requests
+pip install pandas
+pip install openpyxl
 pip install praw
-pip install transformers datasets scikit-learn pandas tqdm
+pip install scikit-learn
+pip install transformers tqdm
 ##To install torch check the following link for the correct version for your GPU
 #https://pytorch.org/get-started/locally/
 pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu126
@@ -10,3 +11,7 @@ pip install seaborn
 pip install umap-learn
 pip install hdbscan
 pip install -U sentence-transformers
+pip install statsmodels
+pip install ipywidgets
+pip install captum
+pip install keybert
