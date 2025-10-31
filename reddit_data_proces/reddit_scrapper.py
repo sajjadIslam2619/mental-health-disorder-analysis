@@ -2,14 +2,25 @@ import praw
 import pandas as pd
 import time
 import os
+from dotenv import load_dotenv
 
-# Initialize PRAW with your credentials
-reddit = praw.Reddit(client_id='jQqFEBqOyeJcGFBvU5N3Zw', #Change Client ID based on app
-                     client_secret='miUWh8AmwnAx20CCLgjyxBrZ0rHsyQ', # Change Client Secret
-                     user_agent='Opiates_Recovery_data_scraper by /u/Sajjad_Islam',
-                     username='Sajjad_Islam',  # Your Reddit username
-                     password=''   # Your Reddit password
-                    )
+load_dotenv()
+
+# Read variables
+client_id = os.getenv('REDDIT_CLIENT_ID')
+client_secret = os.getenv('REDDIT_CLIENT_SECRET')
+user_agent = os.getenv('REDDIT_USER_AGENT')
+username = os.getenv('REDDIT_USERNAME')
+password = os.getenv('REDDIT_PASSWORD')
+
+# Initialize PRAW with env variables
+reddit = praw.Reddit(
+    client_id=client_id,
+    client_secret=client_secret,
+    user_agent=user_agent,
+    username=username,
+    password=password
+)
 
 # Verify the connection
 try:
