@@ -25,7 +25,7 @@ This repository contains code for:
 - **all_roberta_large_v1_multiclass**: 5-class classification (no stress category)
 - **all_roberta_large_v1_with_stress**: 6-class classification (includes stress)
 
-Pre-trained models are available on Hugging Face:
+Fine-tuned models are available on Hugging Face:
 
 - **[SajjadIslam/multiMentalRoBERTA-5-class](https://huggingface.co/SajjadIslam/multiMentalRoBERTA-5-class)**: 5-class classification (depression, anxiety, PTSD, suicide, none)
 - **[SajjadIslam/multiMentalRoBERTA-6-class](https://huggingface.co/SajjadIslam/multiMentalRoBERTA-6-class)**: 6-class classification (includes stress category)
