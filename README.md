@@ -127,7 +127,14 @@ Processed datasets are stored in `Data_Process/Data_Warehouse/`.
 [Apache License 2.0]
 
 ## Citation
-
+```bibtex
+@article{islam2025multimentalroberta,
+  title={multiMentalRoBERTa: A Fine-tuned Multiclass Classifier for Mental Health Disorder},
+  author={Islam, KM and Fields, John and Madiraju, Praveen},
+  journal={arXiv preprint arXiv:2511.04698},
+  year={2025}
+}
+```
 
 
 ## Contact
