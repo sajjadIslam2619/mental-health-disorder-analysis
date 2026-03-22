@@ -128,11 +128,13 @@ Processed datasets are stored in `Data_Process/Data_Warehouse/`.
 
 ## Citation
 ```bibtex
-@article{islam2025multimentalroberta,
+@inproceedings{islam2025multimentalroberta,
   title={multiMentalRoBERTa: A Fine-tuned Multiclass Classifier for Mental Health Disorder},
-  author={Islam, KM and Fields, John and Madiraju, Praveen},
-  journal={arXiv preprint arXiv:2511.04698},
-  year={2025}
+  author={Islam, KM Sajjadul and Fields, John and Madiraju, Praveen},
+  booktitle={2025 IEEE International Conference on Big Data (BigData)},
+  pages={3255--3264},
+  year={2025},
+  organization={IEEE}
 }
 ```
 
